@@ -7,6 +7,10 @@ public class PermissionManager {
     }
 
     public String getRoleName(PermissionLevel level) {
+        if (level == null) {
+            return "Unknown";
+        }
+
         switch (level) {
             case ADMIN:
                 return "Admin";
