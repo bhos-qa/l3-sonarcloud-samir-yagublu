@@ -1,11 +1,8 @@
 name: Java Maven Build, Test, and SonarCloud Analysis
 
 on:
-  push:
-    branches:
-      - "feature/lab3"
   pull_request:
-    types: [opened, synchronize, reopened]
+    branches: [ "develop" ]
     
 jobs:
   build_test:
